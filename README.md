@@ -1,12 +1,12 @@
 # CNC-Dust-Shoe-Generator
 Uses Processing to visualize and export G-Code for a CNC machine dust shoe.
 
-The goal of this project was just to design a dust shoe for a Genmitsu 3018 without involving Fusion 360 or Solid Works.  
+The goal of this project was to make a dust shoe for a Genmitsu 3018 without involving Fusion 360 or Solid Works.  
 Running the Processing sketch lets you see what the current parameters look like, and by pressing ENTER it exports a .nc file to the sketch folder.
 
 There are some notes about things to tweak in the sketch file but the current settings are what were used to build this version:
 
-1) After cutting out, drilling a 1/8 hole thru front tabs, and installing 4-40 threaded rod + nuts.  If you're going to sand/seal it you want to do it before adding any bristles:
+1) This picture is after cutting out, drilling a 1/8 hole thru front tabs, and installing 4-40 threaded rod + nuts.  This is the time to sand and seal it:
  
 ![1_nothing](https://user-images.githubusercontent.com/11184076/152626566-22245c9d-2ddc-4c90-8924-6f5b49fb975e.jpg)
 
