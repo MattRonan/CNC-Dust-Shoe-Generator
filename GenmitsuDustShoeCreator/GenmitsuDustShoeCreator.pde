@@ -37,21 +37,21 @@ float stockThickness = 6.5; //thickness of the board
 float toolR = 1.0; //2mm bit.  too big means you'll need alot of bristles per hole and it'll be annoying.  any bit from 1.5 - 2.5mm is probably good.
 float inc = 3; //change bristle hole spacing
 
-float[][] silhouettePoints = { //displays as the yellow outline (excluding center opening)
+float[][] silhouettePoints = { //Outline of the shape to shoe to cut (excluding center opening). Displays as the yellow outline in visualize window
                                 {10,-5}, {68,-5}, {78,-12}, {78,-42}, {65,-60}, 
                                 {65,-70}, {44,-70}, {44,-40}, {34,-40}, {34,-70}, 
                                 {13,-70},{13,-60}, {0,-42}, {0,-12},{10,-5}
                               };
                     
-//bristles follow the silhouette of the shoe but certain points (the ones in the front) dont have bristles associated with them
-//but its convenient to have this array mirror the silhouette points array.  So 999 and -999 let you say wether or not to use that point
-float[][] bristleOutline = { //displays as the red squares.  The start/end points of the lines of bristles.
+//bristles follow the silhouette of the shoe but certain points (the ones in the front) dont want to have bristles associated with them.
+//However it's convenient to have this array mirror the silhouette points array,  so 999 and -999 let you say wether or not to use that point.
+float[][] bristleOutline = { //Displays as the red squares.  The start/end points of the lines of bristles.
                              {12,-8.5,999}, {66,-8.5,999}, {74,-15,999}, {74,-41,999}, {62,-58,-999}, 
                              {65,-70,-999}, {44,-70,-999}, {44,-40,-999}, {34,-40,-999}, {34,-70,-999}, 
                              {14,-70,-999},{16,-58,999}, {4,-42,999}, {4,-15,999},{12,-8.5,999}
                            };
                            
-float[][] bristleHoles = new float[100][2]; //where the actual bristle hole coordinates get stored after calculation
+float[][] bristleHoles = new float[100][2]; //where the actual bristle hole coordinates get stored after calculation, ie the actual places where holes will be drilled
 int totalB = 0; //number of bristle holes tracker
 
 float[][] labelOffsets = { //length labels get put at edge center points, these just offset them a bit so its clearer to read
@@ -61,9 +61,9 @@ float[][] labelOffsets = { //length labels get put at edge center points, these 
                            };
                            
 int outerTabLocations[] = { 1,0,1,0,0, //1 means a tab will get put halfway between that point and the following point in the array.  Tabs are 2mm tall
-                          0,0,0,0,0,
+                          0,0,0,0,0,   //(should have the nsame number of points as silhouettePoints)
                           0,0,1,0,0
-                        };
+                          };
 
 float[] openingCenter = {39,-37};//xy of part that slips over the motor
 float openingR = 21; //r of part that slips over the motor
