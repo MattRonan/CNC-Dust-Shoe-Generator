@@ -1,13 +1,34 @@
-/*--------Matt Ronan 2020------ Program to generate an nc file for a dust shoe that fits a Genmitsu 3018.  
+/*  Program to generate an nc file for a dust shoe that fits a Genmitsu 3018.  
+* Copyright (c) 2022 Matt Ronan
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
 
--- Most important thing is that the big circle opening fits tightly around the motor, so I would do a test run to make sure that it's the right dimension.
--- Drill a 1/8" hole between the two front tabs and use a 4-40 rod with a nut on each end to squeeze the motor even tighter. 
--- Maple or some other kinda hard wood should be used.  4-40 nuts on threaded rod need to be TIGHT to make sure vibration can't shake the shoe off.
--- Bristles can be clipped off a paintbrush, and then any kind of epoxy can be used to stick them into the bristle holes.
--- Set stockThickness to wood thickness, I wouldnt use thinner than 6.5mm
--- Set 'inc' to the distance you want between bristle holes, and then it will use that as a guideline for 
+/* Notes
+ - Most important thing is that the big circle opening fits tightly around the motor, so I would do a test run to make sure that it's the right dimension.
+ - Drill a 1/8" hole between the two front tabs and use a 4-40 rod with a nut on each end to squeeze the motor even tighter. 
+ - Maple or some other kinda hard wood should be used.  4-40 nuts on threaded rod need to be TIGHT to make sure vibration can't shake the shoe off.
+ - Bristles can be clipped off a paintbrush, and then any kind of epoxy can be used to stick them into the bristle holes.
+ - Set stockThickness to wood thickness, I wouldnt use thinner than 6.5mm
+ - Set 'inc' to the distance you want between bristle holes, and then it will use that as a guideline for 
    choosing how many bristle holes to put so that they start on the first bristle outline point and end exactly ontop of the second.
--- No bristles on the front for easier bit changing but that lets some dust out so add some there if you want.
+ - No bristles on the front for easier bit changing but that lets some dust out so add some there if you want.
 */
 
 float stockThickness = 6.5; //thickness of the board
