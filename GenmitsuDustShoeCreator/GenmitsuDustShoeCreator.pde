@@ -22,12 +22,13 @@
 */
 
 /* Notes
+ - .nc file is included in this repository but it's recommended to run the Processing sketch to verify all the settings are good, then export your own.
  - Most important thing is that the big circle opening fits tightly around the motor, so I would do a test run to make sure that it's the right dimension.
  - Drill a 1/8" hole between the two front tabs and use a 4-40 rod with a nut on each end to squeeze the motor even tighter. 
  - Maple or some other kinda hard wood should be used.  4-40 nuts on threaded rod need to be TIGHT to make sure vibration can't shake the shoe off.
  - Bristles can be clipped off a paintbrush, and then any kind of epoxy can be used to stick them into the bristle holes.
- - Set stockThickness to wood thickness, I wouldnt use thinner than 6.5mm
- - Set 'inc' to the distance you want between bristle holes, and then it will use that as a guideline for 
+ - Set stockThickness to wood thickness, I wouldnt use thinner than 6.5mm.
+ - Set 'inc' to the distance you want between bristle holes. It will then be used as a guideline for 
    choosing how many bristle holes to put so that they start on the first bristle outline point and end exactly ontop of the second.
  - No bristles on the front for easier bit changing but that lets some dust out so add some there if you want.
 */
