@@ -6,7 +6,7 @@ Running the Processing sketch lets you see what the current parameters look like
 
 There are some notes about things to tweak in the sketch file but the current settings are what were used to build this version:
 
-1) This picture is after cutting out, drilling a 1/8 hole thru front tabs, and installing 4-40 threaded rod + nuts.  This is the time to sand and seal it:
+1) This picture is after cutting out, drilling a 1/8 hole thru front tabs, and installing 4-40 threaded rod + nuts.  This is the point where you want to sand and seal it:
  
 ![1_nothing](https://user-images.githubusercontent.com/11184076/152626566-22245c9d-2ddc-4c90-8924-6f5b49fb975e.jpg)
 
